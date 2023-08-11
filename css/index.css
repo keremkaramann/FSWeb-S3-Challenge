@@ -134,7 +134,7 @@ table {
 
 html {
   max-width: 1920px;
-  min-width: 428px;
+  /* min-width: 428px; */
   width: 100%;
   font-size: 62.5%;
 }
@@ -182,8 +182,27 @@ header {
   background-position: center;
   background-repeat: no-repeat;
 }
+.header-container {
+  background-color: rgb(0, 4, 17, 0.8);
+}
 header h1 {
   color: #fff;
+  text-align: center;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+nav a {
+  color: #fff;
+}
+.socials {
+  text-align: center;
+  padding: 15px;
+}
+.socials a {
+  color: #fff;
+  margin: 25px;
 }
 /* spacers */
 .spacer {
@@ -204,7 +223,21 @@ header h1 {
   text-align: center;
   background-color: rgb(0, 4, 17);
 }
-
+.gallery h2 {
+  color: #fff;
+  padding: 15px 0;
+}
+.ana-yemek {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 20px;
+  justify-content: space-evenly;
+}
+.ana-yemek img {
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
 /* about us section */
 .about {
   width: 100%;
@@ -227,12 +260,23 @@ header h1 {
 
 .about h2 {
   width: 100%;
+  color: #fff;
 }
 
 .about-container .text {
   width: 50%;
+  color: #fff;
+  font-size: 2rem;
 }
-
+.about-container h2 {
+  font-size: 4rem;
+}
+.about-container .text h3 {
+  font-size: 3rem;
+}
+.about-container .text p {
+  font-size: 1.8rem;
+}
 /* contact us section */
 .contact {
   text-align: center;
@@ -247,18 +291,26 @@ header h1 {
   width: 100%;
   height: 100%;
   background-color: rgb(0, 4, 17, 0.8);
+  color: #fff;
 }
 
 .contact h2 {
   padding-top: 5vh;
+  font-size: 5rem;
 }
 
 .contact h3 {
   padding-top: 2.5vh;
+  font-size: 4rem;
 }
 
 .contact p {
   padding: 0.5vh 0;
+  font-size: 2rem;
+}
+.contact a {
+  color: #fff;
+  font-size: 2rem;
 }
 
 .info {
@@ -283,15 +335,77 @@ header h1 {
 /* footer section */
 footer {
   width: 100%;
-  height: 15vh;
+  /*  height: 15vh; */
   padding-top: 2.5vh;
+  padding-bottom: 3.5vh;
+  font-size: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: rgb(0, 4, 17);
+  color: #fff;
+}
+.footer-header {
+  text-align: center;
+}
+.footer-nav {
+  margin-bottom: 20px;
+}
+.footer-nav a {
+  padding: 0 10px;
+}
+/* .footer-container {
+  display: flex;
+  flex-direction: column;
+} */
+footer h3 {
   font-size: 3rem;
 }
-
+.footer-container p {
+  font-size: 1rem;
+}
+footer a {
+  font-size: 2rem;
+  color: #fff;
+}
+.footer-button {
+  display: flex;
+}
+.footer-button input {
+  width: 350px;
+  height: 35px;
+}
+/* ipad */
+@media (min-width: 768px) and (max-width: 1023px) {
+}
 /* mobile media query */
-@media (max-width: 428px) {
+@media (max-width: 767px) {
   /* header section */
-
+  html {
+    font-size: 30%;
+  }
+  header h1 {
+    padding: 20px;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .socials a {
+    margin: 5px;
+  }
+  .ana-yemek {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 20px;
+    justify-content: center;
+  }
+  .about-container {
+    height: 100%;
+    display: block;
+    background-color: rgb(0, 4, 17, 0.8);
+  }
   /* gallery section */
   .gallery {
     height: auto;
@@ -309,7 +423,8 @@ footer {
   }
 
   .about-container .text {
-    width: 85%;
+    width: 100%;
+    padding: 5px;
   }
 
   /* contact us section */
@@ -334,11 +449,36 @@ footer {
     width: 100%;
     padding-bottom: 2.5vh;
   }
-
+  .about-container h2 {
+    font-size: 10rem;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  .about-container .text h3 {
+    font-size: 9rem;
+  }
+  .about-container .text p {
+    font-size: 7rem;
+  }
   /* footer section */
   footer {
     height: auto;
     padding-top: 2.5vh;
     font-size: 2rem;
+    flex-direction: column;
+    display: flex;
+  }
+  .footer-button {
+    justify-content: center;
+  }
+  .footer-button input {
+    width: 250px;
+    height: 35px;
+  }
+  .footer-container {
+    text-align: center;
+  }
+  .footer-container p {
+    text-align: center;
   }
 }
