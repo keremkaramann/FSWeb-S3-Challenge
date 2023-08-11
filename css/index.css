@@ -189,11 +189,11 @@ header h1 {
   color: #fff;
   text-align: center;
 }
-nav {
+nav div {
   display: flex;
   justify-content: space-evenly;
 }
-nav a {
+nav div a {
   color: #fff;
 }
 .socials {
@@ -387,7 +387,7 @@ footer a {
   header h1 {
     padding: 20px;
   }
-  nav {
+  nav div {
     display: flex;
     align-items: center;
     flex-direction: column;
