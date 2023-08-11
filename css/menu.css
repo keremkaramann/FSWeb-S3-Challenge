@@ -307,13 +307,13 @@ footer {
   }
   .box {
     margin: 10px;
-    padding: 20px 0;
+    padding: 10px 0;
     width: 100%;
   }
   .box h3 {
     border: 5px solid #000;
     width: 25%;
-    margin: 0 auto;
+    margin: 10px auto;
     padding: 10px 0;
   }
   .p-element {

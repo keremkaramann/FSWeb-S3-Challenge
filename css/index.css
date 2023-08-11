@@ -470,10 +470,12 @@ footer a {
   }
   .footer-button {
     justify-content: center;
+    flex-direction: column;
+    padding: 15px;
   }
   .footer-button input {
-    width: 250px;
-    height: 35px;
+    width: 100%;
+    height: 27px;
   }
   .footer-container {
     text-align: center;
